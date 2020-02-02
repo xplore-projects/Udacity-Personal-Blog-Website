@@ -1,0 +1,178 @@
+strong {
+  font-weight: 700;
+}
+
+.article-card {
+  border: 2px solid #efefef;
+  border-radius: 5px;
+  padding: 1%;
+  cursor: pointer;
+}
+
+.article-card:hover {
+  box-shadow: 0px 30px 15px -10px rgba(0, 0, 0, 0.1);
+  background: rgb(250, 248, 248);
+}
+
+/* h1 subtitle */
+.subtitle {
+  font-weight: 700;
+  color: #1792d2;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.article-title {
+  color: #1792d2;
+  font-size: 2rem;
+}
+
+.article-body {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  margin-right: 1%;
+}
+
+.article-read-more,
+.article-info {
+  font-size: 0.875rem;
+}
+
+.article-read-more {
+  color: #1792d2;
+  text-decoration: none;
+  font-weight: 700;
+  margin-bottom: 5%;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+  color: #143774;
+  text-decoration: underline;
+}
+
+.article-info {
+  margin: 1em 0;
+}
+
+.author-info p {
+  padding-left: 15px;
+  font-size: 1rem;
+}
+
+.author-info {
+  display: flex;
+  align-items: center;
+}
+
+.widget-title,
+.widget-recent-post-title {
+  font-size: 1rem;
+}
+
+.widget-title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+.widget-recent-post-title {
+  color: #143774;
+}
+
+.card-profile {
+  display: block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: solid 2px #999;
+}
+
+/* articles */
+
+.article-featured {
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.article-recent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.article-recent-main {
+  order: 2;
+}
+
+.article-recent-secondary {
+  order: 1;
+}
+
+@media (min-width: 600px) {
+  .article-recent {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .article-recent-main {
+    width: 68%;
+  }
+
+  .article-recent-secondary {
+    width: 30%;
+  }
+
+  .article-featured {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-image {
+    order: -2;
+    min-height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .article-info {
+    order: -1;
+  }
+}
+
+/* widgets */
+
+.sidebar-widget {
+  border: 2px solid #efefef;
+  margin-bottom: 2em;
+  padding: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: lighter;
+}
+
+.widget-recent-post {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #707070;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+
+.widget-recent-post:last-child {
+  border: 0;
+  margin: 0;
+}
+
+.widget-image {
+  order: -1;
+  border-radius: 5px;
+}
+
+.widget-items {
+  list-style-type: none;
+  line-height: 1.5;
+  padding-left: 1%;
+}
+\ .widget-items li {
+  font-size: 1.2rem;
+}
