@@ -55,6 +55,30 @@ strong {
   margin: 1em 0;
 }
 
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.button {
+  cursor: pointer;
+  margin: 0;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 1px solid #1792d2;
+  color: #1792d2;
+  font-size: 1rem;
+  transition: all 0.1s ease;
+}
+
+.button:hover {
+  background-color: #1792d2;
+  color: #fff;
+  font-size: 1rem;
+}
+
 .author-info p {
   padding-left: 15px;
   font-size: 1rem;
@@ -63,6 +87,7 @@ strong {
 .author-info {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .widget-title,
